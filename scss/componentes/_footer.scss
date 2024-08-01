@@ -1,0 +1,23 @@
+footer{
+        background-color: $color-principal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        .redes{
+                a{
+                    
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin: 10px;
+
+                }
+        }
+        p{
+            text-align: right;
+
+        }
+
+}
