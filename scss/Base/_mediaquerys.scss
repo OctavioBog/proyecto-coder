@@ -35,6 +35,12 @@
     } 
 }
 @media screen and (max-width:400px){
+    .presentacion{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+    }
     .presentacion div h1{
         font-size: 25px;
         width: 300px;
