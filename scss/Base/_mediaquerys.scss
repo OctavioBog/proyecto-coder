@@ -35,12 +35,6 @@
     } 
 }
 @media screen and (max-width:400px){
-    .presentacion{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        
-    }
     .presentacion div h1{
         font-size: 25px;
         width: 300px;
@@ -54,9 +48,11 @@
         width: 300px;
     }
     .presentacion{
-        padding-left: 0;
         display:flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 60px;
 
     }
     .ofertas .tarjetas{
@@ -120,6 +116,14 @@
     }
     .historia img{
         width: 350px;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
     }
     
 }
