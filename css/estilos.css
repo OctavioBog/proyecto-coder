@@ -11,7 +11,9 @@ body {
   background-color: #7f2336 !important; }
 
 .nav-item a {
-  color: white !important; }
+  color: white !important;
+  transition-duration: 0.5s !important;
+  text-shadow: 1px 1px 1px black !important; }
 
 .nav-item a:hover {
   color: black !important; }
@@ -35,7 +37,8 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
-  padding: 15px; }
+  padding: 15px;
+  transition-duration: 1s; }
 
 header nav ul li a:hover {
   color: black; }
@@ -70,7 +73,8 @@ header nav ul li a:hover {
     color: #7f2336;
     width: 700px;
     padding-left: 80px;
-    transition-duration: 2s; }
+    transition-duration: 2s;
+    text-shadow: 2px 2px 2px white; }
     .presentacion div h1:hover {
       transform: scale(1.2); }
   .presentacion div p {
@@ -79,63 +83,72 @@ header nav ul li a:hover {
     color: black(127, 35, 54);
     width: 700px;
     font-weight: 500;
-    padding-left: 80px; }
+    padding-left: 80px;
+    text-shadow: 1px 1px 1px white; }
 
-.ofertas h2 {
-  color: #7f2336;
-  text-align: center;
-  font-size: 40px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  animation: titulo 1.5s ease-in-out; }
-
-.ofertas .tarjetas {
-  display: grid;
-  grid-template-columns: repeat(6, 250px);
-  grid-template-rows: 500px; }
-  .ofertas .tarjetas div {
+.ofertas {
+  background-color: #7f2336; }
+  .ofertas h2 {
+    color: white;
     text-align: center;
-    border: 5px solid black;
-    width: 200px;
-    height: 425px;
-    display: inline-flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    align-items: center;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 40px;
-    margin: 20px;
-    background-color: white;
-    transition-duration: 1s; }
-    .ofertas .tarjetas div:hover {
-      box-shadow: 0px 16px 32px 0 rgba(0, 0, 0, 0.2);
-      transform: scale(1.1); }
-    .ofertas .tarjetas div img {
-      height: 200px;
-      width: 150px; }
-    .ofertas .tarjetas div p {
-      text-decoration: underline;
-      font-size: 25px; }
-    .ofertas .tarjetas div a {
-      text-decoration: none;
-      background-color: #7f2336;
-      color: white;
-      font-size: 20px;
-      border-radius: 8px;
+    font-size: 40px;
+    padding-top: 30px;
+    animation: titulo 1s ease-in-out; }
+  .ofertas .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(6, 250px);
+    grid-template-rows: 500px;
+    background-color: #7f2336; }
+    .ofertas .tarjetas div {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid #EDD59E;
+      width: 200px;
+      height: 425px;
+      display: block;
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-items: center;
       padding: 15px;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      transition-property: color;
-      transition-duration: 0.5s; }
-      .ofertas .tarjetas div a:hover {
-        color: black; }
+      margin: 10px;
+      border-radius: 40px;
+      margin: 20px;
+      transition-duration: 1s;
+      background-color: #EDD59E; }
+      .ofertas .tarjetas div:hover {
+        box-shadow: 0px 16px 32px 0 rgba(0, 0, 0, 0.2);
+        transform: scale(1.1); }
+      .ofertas .tarjetas div img {
+        height: 200px;
+        width: 150px; }
+      .ofertas .tarjetas div p {
+        font-size: 25px; }
+      .ofertas .tarjetas div h6 {
+        padding-bottom: 10px;
+        font-size: 15px; }
+      .ofertas .tarjetas div a {
+        text-decoration: none;
+        background-color: #7f2336;
+        color: white;
+        font-size: 20px;
+        border-radius: 8px;
+        padding-bottom: 15px;
+        padding: 15px;
+        margin-bottom: 40px;
+        transition-property: color;
+        transition-duration: 0.5s; }
+        .ofertas .tarjetas div a:hover {
+          color: black; }
 
 .ubicacion {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  background-image: url(../img/back3.avif);
+  background-repeat: no-repeat;
+  background-size: cover; }
   .ubicacion .contacto {
     display: flex;
     flex-direction: row;
@@ -145,25 +158,28 @@ header nav ul li a:hover {
     align-items: center; }
     .ubicacion .contacto .formulario {
       display: block;
-      border: 1px solid black;
+      border: 2px solid white;
       border-radius: 5px;
-      color: black;
+      color: white;
       text-align: center;
-      padding-top: 20px; }
-      .ubicacion .contacto .formulario h4 {
+      padding-top: 20px;
+      text-shadow: 1px 1px 1px black; }
+      .ubicacion .contacto .formulario h3 {
         font-size: 35px;
         text-align: center;
         padding-bottom: 20px;
-        color: #7f2336; }
+        color: white;
+        text-shadow: 2px 2px 2px black; }
       .ubicacion .contacto .formulario form .formsolo div label {
         display: flex;
         padding: 5px;
         justify-content: center; }
   .ubicacion .mapa h3 {
     font-size: 40px;
-    color: #7f2336;
+    color: white;
     text-align: center;
-    padding: 30px; }
+    padding: 30px;
+    text-shadow: 2px 2px 2px black; }
 
 .carrusel img {
   display: flex;
@@ -176,39 +192,48 @@ h2 {
   text-align: center;
   font-size: 40px;
   padding-top: 30px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px black; }
 
-.vino h5 {
-  font-size: 60px;
-  padding-top: 40px;
-  text-align: center;
-  padding-bottom: 40px; }
-
-.vino .consejos {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center; }
-  .vino .consejos img {
-    height: 500px;
-    border-radius: 8px; }
-  .vino .consejos .texto p {
+.vino {
+  background-color: antiquewhite; }
+  .vino h5 {
+    font-size: 40px;
+    padding-top: 40px;
     text-align: center;
-    width: 500px;
-    font-size: 20px;
-    margin-top: 20px; }
+    padding-bottom: 40px;
+    font-style: oblique;
+    text-shadow: 2px 2px 2px white; }
+  .vino .consejos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center; }
+    .vino .consejos img {
+      height: 1000px;
+      width: 500px;
+      border-radius: 8px; }
+    .vino .consejos .texto p {
+      text-align: center;
+      width: 500px;
+      font-size: 20px;
+      margin-top: 20px; }
 
 .historia {
   flex-direction: column;
   background-color: #7f2336; }
   .historia h1 {
     color: white;
-    font-size: 50px; }
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black; }
   .historia p {
     text-align: center;
     font-size: 20px;
     width: 800px;
-    color: white; }
+    color: white;
+    text-shadow: 1px 1px 1px black; }
   .historia img {
     width: 1520px; }
 
